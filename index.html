@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Alura</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="bigContainer">
+      <div class="containerOne">
+        <div class="containerLogo">
+          <img src="img/Logo-1.png" alt="logo1" class="logo1" />
+        </div>
+        <div class="containerTextoInput">
+          <textarea
+            name=""
+            id="contenido"
+            cols="30"
+            rows="10"
+            placeholder="Ingrese el texto aqui"
+          ></textarea>
+        </div>
+        <div class="containerAlert">
+          <img src="img/bi_exclamation-circle-fill.png" alt="" />
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="containerButton">
+          <button onclick="botonEncriptar()" class="bEncriptar">
+            Encriptar!
+          </button>
+          <button onclick="botonDesencriptar()" class="bDesencriptar">
+            Desencriptar
+          </button>
+        </div>
+      </div>
+      <div class="containerText">
+        <div class="contenedorResultados" id="contenedorResultados">
+          <!-- etiqueta donde ira el resultado de encriptado o desencriptado -->
+          <p class="textoEncriptado" id="textoEncriptado"></p>
+          <button class="botonCopiar" onclick="copiarContenido()">
+            Copiar
+          </button>
+        </div>
+        <div id="contenedorReferencia">
+          <img class="imgMuneco" src="/img/Muñeco.png" alt="" />
+          <div class="containerNoMessage">
+            <p class="noMessageOne">Ningún mensaje fue encontrado</p>
+            <p class="noMessageTwo">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="footer-heart">
+        Hecho con
+        <g-emoji>
+          <img
+            class="emoji"
+            alt="heart"
+            height="20"
+            width="20"
+            src="img/corazon.svg"
+        /></g-emoji>
+        por <b>Juan Gonzales Mendoza</b>
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
